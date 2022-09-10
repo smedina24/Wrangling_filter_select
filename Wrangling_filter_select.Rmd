@@ -242,8 +242,14 @@ The movies included in the data are Harry Potter and the Sorcerer's Stone, Harry
 4. What is the highest budget for a movie that is an Animation or Comedy with at least 100 votes?
 
 ```{r}
-
+movies101 <- movies %>%
+ filter(votes >= 100) %>%
+ filter(Animation == 1 | Comedy == 1) %>%
+ arrange(desc(budget))
+print(movies101$budget)
 ```
+
+The highest budget is 170000000 for a movie that is Animation or Comedy with at least 100 votes.
 
 5. Is your favorite movie in the dataset? What other questions could you ask or answer using `filter()`, `select()`, and `arrange()`?
 
