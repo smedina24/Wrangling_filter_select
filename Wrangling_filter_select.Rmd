@@ -212,7 +212,11 @@ There were 1,248 movies released in 1995.
 2. Which Comedies with an MPAA rating, over 120 minutes have a rating above 8?
 
 ```{r}
-
+movies_2000 <- movies %>%    
+  filter(length > 120) %>%
+  filter(Comedy == 1) %>%
+  filter(mpaa > 8)
+print(movies_2000$title)
 ```
 
 3. Create a subset of only Harry Potter movies with the title, rating, budget, and votes. Which movies are included in this data? Which is highest rated? Which has the most votes on imdb.com?
