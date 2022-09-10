@@ -258,7 +258,7 @@ The highest budget is 170000000 for a movie that is Animation or Comedy with at 
 ```
 
 
-
+My favorite movie was not in the data set. Another question we could ask is Which Lord of the Rings had the lowest rating? which had the lowest votes. This question would require that we filter the title "Lord of the Rings", then select ratings and votes, and lastly arrange them by descending order.
 
 
 
